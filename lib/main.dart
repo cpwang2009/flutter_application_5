@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: '十本國外名著'),
     );
   }
 }
@@ -48,6 +49,8 @@ class MyHomePage extends StatelessWidget {
       date: "1987",
       description:
           "A book about business negotiations and deal-making strategies.",
+      image:
+          "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/F01/389/51/F013895120.jpg",
     ),
     BookTile(
       title: "To Kill a Mockingbird",
@@ -55,6 +58,7 @@ class MyHomePage extends StatelessWidget {
       date: "1960",
       description:
           "A classic novel about racial injustice and moral growth in the American South.",
+      image: "https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg",
     ),
     BookTile(
       title: "1984",
@@ -62,6 +66,7 @@ class MyHomePage extends StatelessWidget {
       date: "1949",
       description:
           "A dystopian novel about totalitarianism and surveillance society.",
+      image: "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg",
     ),
     BookTile(
       title: "Pride and Prejudice",
@@ -69,6 +74,7 @@ class MyHomePage extends StatelessWidget {
       date: "1813",
       description:
           "A romantic novel exploring themes of love, marriage, and social class.",
+      image: "https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg",
     ),
     BookTile(
       title: "The Great Gatsby",
@@ -76,12 +82,14 @@ class MyHomePage extends StatelessWidget {
       date: "1925",
       description:
           "A story of the Jazz Age and the American Dream's corruption.",
+      image: "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg",
     ),
     BookTile(
       title: "Harry Potter and the Philosopher's Stone",
       author: "J.K. Rowling",
       date: "1997",
       description: "The first book in the magical Harry Potter series.",
+      image: "https://covers.openlibrary.org/b/isbn/9780439708180-L.jpg",
     ),
     BookTile(
       title: "The Catcher in the Rye",
@@ -89,19 +97,14 @@ class MyHomePage extends StatelessWidget {
       date: "1951",
       description:
           "A coming-of-age story about teenage rebellion and alienation.",
-    ),
-    BookTile(
-      title: "Lord of the Flies",
-      author: "William Golding",
-      date: "1954",
-      description:
-          "A novel about civilization versus savagery on a deserted island.",
+      image: "https://covers.openlibrary.org/b/isbn/9780316769174-L.jpg",
     ),
     BookTile(
       title: "The Hobbit",
       author: "J.R.R. Tolkien",
       date: "1937",
       description: "A fantasy adventure about a hobbit's unexpected journey.",
+      image: "https://covers.openlibrary.org/b/isbn/9780547928227-L.jpg",
     ),
     BookTile(
       title: "Dune",
@@ -109,6 +112,15 @@ class MyHomePage extends StatelessWidget {
       date: "1965",
       description:
           "An epic science fiction novel set on the desert planet Arrakis.",
+      image: "https://covers.openlibrary.org/b/isbn/9780441172719-L.jpg",
+    ),
+    BookTile(
+      title: "The Alchemist",
+      author: "Paulo Coelho",
+      date: "1988",
+      description:
+          "A philosophical novel about following your dreams and finding your destiny.",
+      image: "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg",
     ),
   ];
 
